@@ -44,6 +44,7 @@ console.log(z);
 Ans: Template literals, also known as template strings, are a new feature in ES6 that provide a more flexible and readable way to work with strings. They are enclosed by backticks (``). It can do dynamic. It makes the intent clearer and the code much more readable. 
 
 concatenation method: 1. use plus (+) symbol & leading to a long chain of operators and quotation marks. 
+
 2. Multi-line strings require the \n newline character, which can be cumbersome to manage. With template literals, you simply press enter.
 
 
