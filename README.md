@@ -4,20 +4,27 @@
 #### 1) What is the difference between var, let, and const?
 
 Ans: **var:** 1.Global, if not within a function, or function-scoped. It "leaks" outside of blocks like if or for since it is not block-scoped.
+
 2.Hoisted to the top of its scope and initialized as undefined.
+
 3.Can be re-declared and reassigned.
 
 **let:** 1.scoped in blocks. Exists exclusively inside the nearest { }.
+
 2.let and const: Hoisted but not initialized.
+
 3.Cannot be re-declared in the same scope, but can be reassigned.
 
 **const:** 1.Cannot be re-declared or reassigned.
+
 2. Block scoped (like let).
 
 #### 2) What is the difference between map(), forEach(), and filter()? 
 
 Ans: 1.**map()**: create a function on an array and returns a new array.
-2.**forEach()**: make a function on an array, but does not return anything. 
+
+2.**forEach()**: make a function on an array, but does not return anything.
+
 3.**filter()**: Creates a new array with elements that pass a condition .filter some element from an array and return a new array.
 
 #### 3) What are arrow functions in ES6?

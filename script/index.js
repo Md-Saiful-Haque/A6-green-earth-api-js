@@ -1,3 +1,11 @@
+
+// const cartContainer = document.getElementById("cart-container");
+// getCards.addEventListener("click", (e) =>{
+//     if (e.target.innerText === "Add to Cart"){
+//         e.target.closest(".cart").paren
+//     }
+// });
+
 const loading = (status) => {
     if(status === true){
         document.getElementById("spinner").classList.remove("hidden");
@@ -69,6 +77,7 @@ const displayPlantDetails = (plant) => {
     document.getElementById("my_modal_5").showModal()
 }
 
+ 
 const displayLoadPlants = (cards) => {
     const getCards = document.getElementById("all-cagagories");
     getCards.innerHTML = "";
@@ -76,7 +85,7 @@ const displayLoadPlants = (cards) => {
    for(let card of cards){
      const cardDiv = document.createElement("div");
      cardDiv.innerHTML = `
-     <div class="bg-white rounded-[8px] p-3 flex flex-col justify-between items-end h-[550px]">
+     <div class="bg-white rounded-[8px] p-3 flex flex-col justify-between items-end h-[550px] cart">
               <div class="w-full h-1/2">
                 <img src=${card.image} alt="" class="rounded-[8px] w-full h-full">
               </div>  
@@ -88,7 +97,7 @@ const displayLoadPlants = (cards) => {
                         <p>৳<span>${card.price}</span></p>
                     </div>
                     <div class="w-full bg-[#15803D] rounded-[999px] text-center mt-auto">
-                    <button class="text-white font-medium py-3 ">Add to Cart</button>
+                    <button class="text-white font-medium py-3 cart-btn">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -106,7 +115,7 @@ const displayAllCatagories = (allCatagories) => {
    for(let plant of allCatagories){
       const catagoriDiv = document.createElement("div");
       catagoriDiv.innerHTML =`
-      <div class="bg-white rounded-[8px] p-3 flex flex-col justify-between items-end h-[550px]">
+      <div class="bg-white rounded-[8px] p-3 flex flex-col justify-between items-end h-[550px] cart">
               <div class="w-full h-1/2">
                 <img src=${plant.image} alt="" class="rounded-[8px] w-full h-full">
               </div>  
@@ -129,7 +138,6 @@ const displayAllCatagories = (allCatagories) => {
 }
 
 
-
 const displayCatagories = (categoriess) =>{
     const getCatagories = document.getElementById("categories");
     getCatagories.innerHTML = ""
@@ -145,5 +153,4 @@ const displayCatagories = (categoriess) =>{
 
 loadCatagories()
 loadAllCatagories()
-
 
